@@ -17,7 +17,7 @@ Main Menu:
    - LED_BLINK
 2. Read Sensor Value (ADC)
 3. AES Operations
-   - AES_ENC <text>
+   - AES_ENC <plaintext>
    - AES_DEC <ciphertext>
 ```
 ## Hardware and Software Requirements
