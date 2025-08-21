@@ -5,7 +5,7 @@ RTOS-based UART menu interface that allows task management, LED control, sensor 
 ## Features
 - Menu-driven command interface over UART
 - LED Control – ON, OFF, BLINK
-- Sensor Reading – Dummy sensor value simulation
+- Sensor Reading – Read sensor value via ADC
 - AES Encryption/Decryption – Demonstrates basic data security handling
 - Task Management – Uses FreeRTOS tasks and queues for modular design
 ## Menu Options
