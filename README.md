@@ -20,9 +20,22 @@ Main Menu:
    - AES_ENC <text>
    - AES_DEC <ciphertext>
 ```
+## Hardware and Software Requirements
+- Hardware:
+   - STM32F446 Nucleo or similar board
+   - Onboard UART interface (via ST-LINK VCP or external USB-UART module)
+   - LED connected to GPIO pin for ON/OFF/Blink control
+   - Analog sensor (e.g., potentiometer, temperature sensor) connected to ADC pin
+   - Power supply (USB or external 5V)
+
+- Software:
+   - STM32CubeIDE (for project build and flashing)
+   - FreeRTOS (task scheduling and queue management)
+   - Tiny-AES-c library (AES encryption/decryption)
+   - Serial terminal (e.g., PuTTY, Tera Term) for sending commands
+   - Python GUI for encrypted UART communication (Optional)
 ## How It Works
 - User connects via UART terminal (e.g., Tera Term, PuTTY)
 - A menu is displayed with available options
 - User inputs commands, which are parsed and routed to the appropriate FreeRTOS task
 - Each feature is executed in its own task for clarity and modularity
-
